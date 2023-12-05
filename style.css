@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #3c87ff;
+    overflow-y:scroll;
+}
+.wrapper{
+    width: 800px;
+    background: #ffffff;
+    margin: 35px auto;
+    border-radius: 7px;
+    padding: 30px 0px;
+}
+.task-input{
+    height: 50px;
+    padding: 0 25px;
+   
+}
+.task-input input{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0 20px 0 10px;
+}
+
+.controls{
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 1px solid #ccc;
+    align-items: center;
+}
+.controls .stat{
+  margin-left: 200px;
+}
+.controls .tat{
+    margin-left: 5px;
+}
+.controls .clear-btn{
+    outline:none;
+    border: none;
+    background-color: rgb(224, 62, 62);
+    cursor: pointer;
+    font-size: 13px;
+    padding: 7px 13px;
+    border-radius: 4px;
+    color:#ffffff;
+    cursor:pointer;
+    font-size: 13px;
+}
+/*10:34 */
+.task-box{
+    margin: 20px 25px;
+}
+.task{
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 400px 114px 236px;
+   
+}
+.task-box .task:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.task label{
+    display: grid;
+    grid-template-columns:auto auto auto
+}
+
+.task .sec p.checked{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.task label input{
+  margin-right: 12px;
+}
+.task .settings button{
+    cursor: pointer;
+}
+.sec{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.sec input{
+    margin-right: 10px;
+}
+.task .status{
+justify-self: end;
+}
+.settings{
+    justify-self: end;
+}
+.settings .update{
+        outline:none;
+        border: none;
+        background-color: rgb(46, 46, 182);
+        cursor: pointer;
+        font-size: 13px;
+        padding: 7px 13px;
+        border-radius: 4px;
+        color:#ffffff;
+        cursor:pointer;
+        font-size: 13px;
+}
+.settings .delete{
+        outline:none;
+        border: none;
+        background-color: rgb(224, 62, 62);
+        cursor: pointer;
+        font-size: 13px;
+        padding: 7px 13px;
+        border-radius: 4px;
+        color:#ffffff;
+        cursor:pointer;
+        font-size: 13px;
+}
